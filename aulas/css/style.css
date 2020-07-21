@@ -5,106 +5,21 @@
 
 html,body{
     height: 100%;
+    font-family: "Open Sans";
 }
 
-form{
-    width: 96%;
-    max-width: 600px;
-    margin:30px auto;
-    text-align: center;
-}
-
-form fieldset{
-    padding: 20px 40px;
-    border: 1px solid black;
-}
-
-form legend{
-    text-align: left;
-    font-size: 17px;
-    color:rgb(2, 30, 49);
-}
-
-form input[type=text]{
-    font-family: tahoma;
-    display: inline-block;
-    margin-top: 30px;
-    width: 80%;
-    padding: 10px 15px;
-    border: 1px solid #ccc;
-}
-
-
-/*
-form select option:nth-of-type(3){
-    color: red;
-}
-*/
-
-form input[type-text]:focus, form select:focus, form textarea:focus{
-    outline: 0;
-}
-
-form input[type=text]:focus{
-    outline: 0;
-    background-color: greenyellow;
-    border: 1px solid;
-}
-
-form select{
-    font-family: tahoma;
-    color: black;
-    width:calc(80% + 26px);
-    margin-top: 30px;
-    padding: 10px 13px;
-    display: inline-block;
-    border: 1px solid;
-    color: inherit;
+form > *{
+    font-family: "Open Sans";
 }
 
 /*
-form select option[disabled]{
-    color: orangered;
+quando utilizamos o important, o nível de especificação deixa de existir
+.box p{
+    font-family: "Open Sans" !important;
+}
+
+.text{
+    font-family: tahoma !important;
 }
 */
 
-form h2{
-    color:rgb(2, 30, 49);
-    margin-top:20px;
-}
-
-.input{
-    display: inline-block;
-    text-align: left;
-    margin-top: 20px;
-}
-
-.input span{
-    margin-left: 13px;
-    font-size: 16px;
-    color:rgb(2, 30, 49);
-}
-
-form textarea{
-    font-family: tahoma;
-    border: 1px solid #ccc;
-    height: 140px;
-    margin-top: 30px;
-    width: 80%;
-    padding: 10px 13px;
-    resize: none;
-    outline: 0;
-}
-
-form input[type=submit]{
-    margin-top: 30px;
-    border: 0;
-    width: 140px;
-    height: 40px;
-    font-size: 16px;
-    cursor: pointer;
-    border: 0.5px solid black;
-    color: black;
-    font-weight: bold;
-    background-color: greenyellow;
-}
